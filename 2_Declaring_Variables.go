@@ -34,6 +34,9 @@ func main() {
 	text := "This is a string"
 	rank := 11
 
-	fmt.Println(x, y, z, ss, aa, bb, text, rank, user)
+	// Constant declaration, shorthand declaration not allowed
+	const pie = 3.14 // Value must be provided when declaring constants
+
+	fmt.Println(x, y, z, ss, aa, bb, text, rank, user, pie)
 	// We cant modify data type of a variable after declaring it
 }

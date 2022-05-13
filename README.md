@@ -65,4 +65,12 @@ by the programmer or is infered by the compiler.
     - `fmt.Scanf("%<format specifier> (s)", <variables>)`
     - `fmt.Scanf` returns 2 arguments `count` and `err`
         - `count` : the number of arguments that the function writes to
-        - `err` : any error thrown during the execution of the function
+        - `err` : any error thrown during the execution of the function.
+- Type Casting
+    - Data types can be converted to other data types, but this does not guarantee that the value will remain intact.
+- Constants: They are variables whose value after initialization can't be changed.
+    - Example: `const <const name> <data type> = <value>`
+    - Here data type is optional when declaring constants
+    - Theu are of two types:
+        - Untyped Constant: Constants declared without specifying data type.
+        - Typed Constant: Constants declared with data type.
