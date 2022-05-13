@@ -10,5 +10,5 @@ import "fmt"
 
 // Entry point of executable programs
 func main() {
-	fmt.Println("Hello, Rohit")
+	fmt.Println("Hello, World")
 }
