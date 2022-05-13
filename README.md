@@ -61,3 +61,8 @@ by the programmer or is infered by the compiler.
     - `int` -> `0`
     - `float64` -> `0.0`
     - `string` -> `""`
+- Taking User Input
+    - `fmt.Scanf("%<format specifier> (s)", <variables>)`
+    - `fmt.Scanf` returns 2 arguments `count` and `err`
+        - `count` : the number of arguments that the function writes to
+        - `err` : any error thrown during the execution of the function
