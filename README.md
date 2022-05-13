@@ -37,3 +37,21 @@ by the programmer or is infered by the compiler.
     - `var b bool = true`
     - `var f float64 = 987.123`
 ## Printing Variables
+- There are three methods available in "fmt" package for printing variables.
+    - `fmt.Print()`: This simply prints the value inside it and does not add a new line at the end after printing.
+    - `fmt.Println()`: This prints the value inside it and adds a new line at the end after printing. Also adds a space when multiple values are passed to it.
+    - `fmt.Printf()`: This function can print formatted output using format specifiers same as in C/C++ language.
+        - Format Specifiers: Ther are used to format different kinds of data types and are always preceded with a `%` sign.
+            | Format Specifier     | Description        
+            | ------------- | -------------
+            | %v | Prints the value in default format
+            | %t | Used for boolean values
+            | %d | Used for printing integers
+            | %f | Used for decimal numbers
+            | %.3f | Prints the decimal value upto 3 decimal places
+            | %c | Used for printing characters
+            | %s | Used for printing plain string
+            | %q | Used for printing characters or string in quotes
+            | %T | Prints the type of value
+    - Examples
+        - `fmt.Printf("Template String with %d %s", num, str)`
