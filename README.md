@@ -55,3 +55,9 @@ by the programmer or is infered by the compiler.
             | %T | Prints the type of value
     - Examples
         - `fmt.Printf("Template String with %d %s", num, str)`
+- Scope of variables in Golang is same as in C/C++ languages.
+- Zero Values: This is the default value given to an uninitialised variable in Golang.
+    - `bool` -> `false`
+    - `int` -> `0`
+    - `float64` -> `0.0`
+    - `string` -> `""`
