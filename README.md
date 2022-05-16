@@ -30,12 +30,16 @@ by the programmer or is infered by the compiler.
 
 ## Variables and their Declarations
 - Syntax for declaring variables
-    - `var <variable name> <data type> = <value>`
+    - ```golang
+        var <variable name> <data type> = <value>
+    ```
 - Examples
-    - `var s string = "Hello there"`
-    - `var i int = 2468`
-    - `var b bool = true`
-    - `var f float64 = 987.123`
+    ```golang
+    var s string = "Hello there"
+    var i int = 2468
+    var b bool = true
+    var f float64 = 987.123
+    ```
 ## Printing Variables
 - There are three methods available in "fmt" package for printing variables.
     - `fmt.Print()`: This simply prints the value inside it and does not add a new line at the end after printing.
@@ -54,7 +58,9 @@ by the programmer or is infered by the compiler.
             | %q | Used for printing characters or string in quotes
             | %T | Prints the type of value
     - Examples
-        - `fmt.Printf("Template String with %d %s", num, str)`
+        - ```golang
+            fmt.Printf("Template String with %d %s", num, str)
+        ```
 - Scope of variables in Golang is same as in C/C++ languages.
 - Zero Values: This is the default value given to an uninitialised variable in Golang.
     - `bool` -> `false`
@@ -62,7 +68,9 @@ by the programmer or is infered by the compiler.
     - `float64` -> `0.0`
     - `string` -> `""`
 - Taking User Input
-    - `fmt.Scanf("%<format specifier> (s)", <variables>)`
+    - ```golang
+        fmt.Scanf("%<format specifier> (s)", <variables>)
+    ```
     - `fmt.Scanf` returns 2 arguments `count` and `err`
         - `count` : the number of arguments that the function writes to
         - `err` : any error thrown during the execution of the function.
@@ -82,7 +90,7 @@ by the programmer or is infered by the compiler.
     - Bitwise Operators: `&, |, <<, >>, ^`
     - Logical Operators: `&&, ||, !`
 ## Control Statements
-```
+```golang
     if condition { // parenthesis around condition is not necessary
         // executes when condition is true
     } else { // This else statement must be on the same line where the if block ends
@@ -100,7 +108,7 @@ by the programmer or is infered by the compiler.
 ```
 - Switch Case in golang has implicit break statement unlike in languages like C/C++.
 - `fallthrough` : This keyword in switch block forces the execution to fall through all the conditions uptill default condition is reached or a condition without this keywoord is reached.
-```
+```golang
     switch expression {
     case value_1 / condition:
         // executes when expression matches to this value
