@@ -199,3 +199,12 @@ nums := [...]int{1, 2, 3} // ... is called elipsis, compiler detects the length 
     // Example
     slice = append(slice, 11, 22, 33)
     ```
+- Copying values from a slice: Both the slices must be of same data type.
+    ```golang
+    func copy(dst, src T[])int
+    // Example
+    num := copy(dest_slice, src_slice)
+    ```
+- Looping through a slice is same as looping through an array.
+
+## Maps
