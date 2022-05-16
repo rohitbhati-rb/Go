@@ -74,3 +74,10 @@ by the programmer or is infered by the compiler.
     - Theu are of two types:
         - Untyped Constant: Constants declared without specifying data type.
         - Typed Constant: Constants declared with data type.
+## Operators
+- There are 5 types of operators in Golang:
+    - Arithmatic Operators: `+, -, *, /, %, ++, --`
+    - Comparison Operators: `==, <=, >=, <, >, !=`
+    - Assignment Operators: `=, +=, -=, *=, /=, %=`
+    - Bitwise Operators: `&, |, <<, >>, ^`
+    - Logical Operators: `&&, ||, !`
