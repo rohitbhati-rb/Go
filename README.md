@@ -21,7 +21,7 @@ by the programmer or is infered by the compiler.
     | Data Type     | Memory        
     | ------------- | -------------
     | `float32` (single precision)| 32 bits or 4 bytes
-    | `float64` (single precision)| 64 bits or 8 bytes
+    | `float64` (double precision)| 64 bits or 8 bytes
 - String
     - They are declared using `string` keyword and are always enclosed in `""` (double quotes). A `string` data type takes 16 bytes of memory.
 - Boolean
@@ -138,4 +138,28 @@ Infinite for loop
 for {
     // your code
 }
+```
+## Arrays
+- The elements are stored in contigous memory.
+- Array can store elements of same data type.
+- Arrays are of fixed length. Length cannot be changed after their declaration.
+    - length : It denotes the no of elements in the array.
+    - capacity : It denotes the no of elements that it can contain in the array.
+    - For Arrays the above two properties are same.
+- Array elements can be accessed and can be modified from their indices.
+- `range` keyword is used for looping through an array, slices and maps.
+
+Syntax for declaration:
+```golang
+var <array name> [<size of the array>] <data type>
+// Array declaration
+var numbers [100] int
+var words [50] string
+
+// Array initialization
+var nums [3]int = [3]int {1, 2, 3}
+// OR
+nums := [3]int{1, 2, 3}
+// OR
+nums := [...]int{1, 2, 3} // ... is called elipsis, compiler detects the length of the array
 ```
