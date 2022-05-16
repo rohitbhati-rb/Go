@@ -82,6 +82,7 @@ by the programmer or is infered by the compiler.
     - Bitwise Operators: `&, |, <<, >>, ^`
     - Logical Operators: `&&, ||, !`
 ## Control Statements
+```
     if condition { // parenthesis around condition is not necessary
         // executes when condition is true
     } else { // This else statement must be on the same line where the if block ends
@@ -96,5 +97,18 @@ by the programmer or is infered by the compiler.
     } else { 
         // executes when all above conditions are false
     }
-
-    
+```
+- Switch Case in golang has implicit break statement unlike in languages like C/C++.
+- `fallthrough` : This keyword in switch block forces the execution to fall through all the conditions uptill default condition is reached or a condition without this keywoord is reached.
+```
+    switch expression {
+    case value_1 / condition:
+        // executes when expression matches to this value
+    case value_2 / condition:
+        // executes when expression matches to this value
+    case value_3 / condition:
+        // executes when expression matches to this value
+    default:
+        // executes when none of the above values matches to expression
+    }
+```
