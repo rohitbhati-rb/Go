@@ -81,3 +81,9 @@ by the programmer or is infered by the compiler.
     - Assignment Operators: `=, +=, -=, *=, /=, %=`
     - Bitwise Operators: `&, |, <<, >>, ^`
     - Logical Operators: `&&, ||, !`
+## Control Statements
+    if condition {
+        // executes when condition is true
+    } else {
+        // executes when condition is false
+    }
