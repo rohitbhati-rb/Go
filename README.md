@@ -163,3 +163,39 @@ nums := [3]int{1, 2, 3}
 // OR
 nums := [...]int{1, 2, 3} // ... is called elipsis, compiler detects the length of the array
 ```
+
+## Slices
+- A slice is an continuous segment of an underlying array. It is more powerful, flexible, convenient than array as it is a variable length sequence and stores elements of same type.
+- A slice has 3 components:
+    - Pointer: It points to the first element of the array which is accessible through slice.
+    - Length: It is the total no of elements present in the array. `len()`
+    - Capacity: It is the maximum size upto which the slice can expand. `cap()`
+- Declaration and initialization:
+    
+    ```golang
+    <slice name> := []<data type>{values}
+    ```
+    In the above code, the compiler first creates the array and then returns the slice reference to it.
+    
+    ```golang
+    <slice name> := <array name>[startIndex : endIndex]
+    slice1 := array[0 : 3] // elements upto index 2 are included starting from 0
+    slice2 := array[1 : 6] // elements upto index 5 are included starting from 1
+    slice3 := array[ : 4] // elements upto index 3 are included starting from 0
+    slice4 := array[ : ] // all elements are included
+    ```
+    In the above code, the compiler uses the created array and creates all the slices.
+
+    ```golang
+    <slice name> := make([]<data type>, length, capacity)
+    slice := make([]int, 15, 100)
+    ```
+    In the above code, `make()` function is usd to create an empty slice. This is the common way of creating slices.
+- `len(array)` and `cap(array)` are same for array but can be different from slice. As `capacity(slice)` starts from the starting index of slice.
+- **When we change any value in a slice, it gets affected in the array as well, because slice is an reference to the array.**
+- Appending values to a slice
+    ```golang
+    func append(s []T, values ...T)[]T
+    // Example
+    slice = append(slice, 11, 22, 33)
+    ```
