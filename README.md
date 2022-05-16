@@ -108,6 +108,7 @@ by the programmer or is infered by the compiler.
 ```
 - Switch Case in golang has implicit break statement unlike in languages like C/C++.
 - `fallthrough` : This keyword in switch block forces the execution to fall through all the conditions uptill default condition is reached or a condition without this keywoord is reached.
+- switch with conditions, does not need ```expression```
 ```golang
     switch expression {
     case value_1 / condition:
@@ -119,4 +120,22 @@ by the programmer or is infered by the compiler.
     default:
         // executes when none of the above values matches to expression
     }
+```
+## Loops
+```golang
+for initialization; condition; post {
+    // your code
+}
+```
+Example
+```golang
+for i := 1; i < 3; i++ {
+    fmt.Println(i)
+}
+```
+Infinite for loop
+```golang
+for {
+    // your code
+}
 ```
