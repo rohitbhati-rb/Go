@@ -208,3 +208,57 @@ nums := [...]int{1, 2, 3} // ... is called elipsis, compiler detects the length 
 - Looping through a slice is same as looping through an array.
 
 ## Maps
+- Map is a data structure which provides an unordered collection of key-value pairs. It is implemented using hash tables.
+- They are same as dictionary in python, hash table in java.
+- Syntax:
+```golang
+var <map name> map[key data type]<value data type>
+// Example
+var pair map[string]int
+// This creates a nil map, a map with no key value pairs.
+// A nil map does not allow to add key-value pairs to it.
+```
+- Declaration and initialization
+
+    ```golang
+    <map name> := map[key data type]<value data type>{<key-value-pairs>}
+    // Example
+    nums := map<string>int{"one":1, "two":2}
+    ```
+- Using `make()` function to create a map
+    ```golang
+    <map name> := make(map[key data type]<value data type>, <initial capacity>)
+    // initial capacity is optional
+    // Example
+    nums := make(map[string]int)
+    ```
+- Adding and Updating the map
+    ```golang
+    // Adding key value pairs
+    nums["one"] = 1
+    nums["two"] = 2
+    nums["three"] = 33
+    // Updating key value pairs
+    nums["three"] = 3
+    ```
+- Deletinga key value pair from the map
+    ```golang
+    delete(nums, "three")
+    // nums => map[one:1 two:2]
+    ```
+- A map can be truncated or cleared by reinitialisation
+    ```golang
+    nums = make(map[string]int)
+    ```
+- Looping through a map
+    ```golang
+    for key, value := range nums {
+		fmt.Println(key, "=>", value)
+	}
+    ```
+- Accessing a key-value pair
+    ```golang
+    value, found := languages["one"]
+    // value contains the key value if it exists, else zero value of the respective data type
+    // found is true if the key value exists, else false
+    ```
