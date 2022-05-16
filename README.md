@@ -82,8 +82,19 @@ by the programmer or is infered by the compiler.
     - Bitwise Operators: `&, |, <<, >>, ^`
     - Logical Operators: `&&, ||, !`
 ## Control Statements
-    if condition {
+    if condition { // parenthesis around condition is not necessary
         // executes when condition is true
-    } else {
+    } else { // This else statement must be on the same line where the if block ends
         // executes when condition is false
     }
+
+
+    if condition {
+        // executes when condition is true
+    } else if condition { // This else-if statement must be on the same line where the if block ends
+        // executes when condition is true
+    } else { 
+        // executes when all above conditions are false
+    }
+
+    
