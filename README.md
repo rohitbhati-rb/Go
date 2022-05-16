@@ -58,8 +58,8 @@ by the programmer or is infered by the compiler.
             | %q | Used for printing characters or string in quotes
             | %T | Prints the type of value
     - Examples
-        - ```golang
-            fmt.Printf("Template String with %d %s", num, str)
+        ```golang
+        fmt.Printf("Template String with %d %s", num, str)
         ```
 - Scope of variables in Golang is same as in C/C++ languages.
 - Zero Values: This is the default value given to an uninitialised variable in Golang.
@@ -68,8 +68,8 @@ by the programmer or is infered by the compiler.
     - `float64` -> `0.0`
     - `string` -> `""`
 - Taking User Input
-    - ```golang
-        fmt.Scanf("%<format specifier> (s)", <variables>)
+    ```golang
+    fmt.Scanf("%<format specifier> (s)", <variables>)
     ```
     - `fmt.Scanf` returns 2 arguments `count` and `err`
         - `count` : the number of arguments that the function writes to
