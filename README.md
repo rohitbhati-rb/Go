@@ -302,3 +302,34 @@ var pair map[string]int
     - Anonymous Function: It is a function without a name.
     - High Order Functions: It accepts a function as an argument or returns a function as its return type.
     - `defer` statement delays the execution of a function untill the surrounding function returns. The deferred call's arguments are evaluated immediately, but the function call is not executed until the surrounding function returns.
+
+## Pointers
+- The concept of pointers here is same as it is in C/C++.
+- Declaration
+    
+    ```golang
+    var <pointer_name> *<data_type>
+    var ptr_i *int
+    var ptr_s *string
+    ```
+- Initialization
+    
+    ```golang
+    var <pointer name> *<data type> = &<variable name>
+    <pointer name> := &<variable name>
+    i := 5
+    var ptr_i *int = &i
+    s := "Golang"
+    ptr_s := &s
+    ```
+- Dereferencing a pointer
+    
+    ```golang
+    s := "Golang"
+    ptr_s := &s
+    fmt.Println(*ptr_s) // Golang
+    *ptr_str = "Go"
+	fmt.Println(*ptr_str) // Go
+    ```
+- Passing by value and reference: These are also same as in C/C++.
+    - Slices and maps are passed by reference by default and all the other data types are passed by making their copy.
