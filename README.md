@@ -333,3 +333,49 @@ var pair map[string]int
     ```
 - Passing by value and reference: These are also same as in C/C++.
     - Slices and maps are passed by reference by default and all the other data types are passed by making their copy.
+
+## Structs
+- It is a user defined data type.
+- It is similar to struct in C/C++.
+- Declaration
+
+    ```golang
+    type <struct name> struct {
+        // list of data fields
+    }
+
+    type Student struct {
+        name string
+        phone string
+        rollno int
+        marks map[string] int
+        grades map[string] string
+    }
+    ```
+- Initialization
+
+    ```golang
+    var <variable name> <struct name>
+    var s Student // s is initialized with zero values.
+
+    <variable name> := new(<struct name>)
+    st := new(Student)
+
+    <variable name> := <struct name> {
+        <field name>: value,
+        <field name>: value,
+    }
+    st2 := Student{
+        name: "Rohit",
+        phone: "1234567890",
+        rollno: 1
+    }
+    
+    st3 := Student{"Rohit","1234567890",1}
+    ```
+- Accessing Fields
+
+    ```golang
+    <variable name>.<field name>
+    ```
+- Comparing structs: We can't compare 2 struct variables of different types even though they have same data fields. We can only compare 2 struct variables of same type.
