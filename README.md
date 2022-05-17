@@ -285,3 +285,19 @@ var pair map[string]int
     - It must starts with a letter and cannot have spaces.
     - It can have any no of letters and symbols.
     - It is case sensitive.
+- Return Types
+    - A function can return multiple values.
+    - A function can return values which are named at the function declaration.
+    - A variadic function is a function that accepts variable no of arguments of same data type.
+    
+        ```golang
+        func <func_name>(param-1 type, param-2 type, para-3 ...type)<return type>
+
+        // This function expects 0 or more integers
+        // Within the function nums will have slice of all arguments.
+        func summation(nums ...int)int{
+
+        }
+        ```
+    - Anonymous Function: It is a function without a name.
+    - High Order Functions: It accepts a function as an argument or returns a function as its return type.
