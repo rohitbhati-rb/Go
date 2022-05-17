@@ -262,3 +262,26 @@ var pair map[string]int
     // value contains the key value if it exists, else zero value of the respective data type
     // found is true if the key value exists, else false
     ```
+
+## Functions
+- Syntax:
+    ```golang
+    func <function name>(<parameters>)<return type>{
+        // function body
+    }
+    <function name>(<argument(s)>)
+    ```
+
+- Example
+    ```golang
+    func addition(int a, int b) int{
+        sum := a + b
+        return sum
+    }
+    addition(123, 456)
+    sum := addition(100, 200)
+    ```
+- Naming convention
+    - It must starts with a letter and cannot have spaces.
+    - It can have any no of letters and symbols.
+    - It is case sensitive.
