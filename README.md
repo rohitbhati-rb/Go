@@ -391,3 +391,23 @@ var pair map[string]int
     }
     ```
 - Method Sets: It is a set of methods that are available to a data type. It is an useful way to encapsulate functionality.
+
+## Interfaces
+- It is a blueprint for a method set.
+- It specifies a method set and is a powerful way to introduce modularity in Go.
+- They describe all the methods of a method set by providing the function signature for each method, but do not implement them.
+- A type implements an interface by implementing its methods.
+- Interfaces are implemented implicitly in Golang, so there is no specific keyword for the same.
+- Syntax:
+    
+    ```golang
+    type <interface name> interface {
+        // Method signatures
+    }
+
+    type StudentData interface {
+        getStudentName() string
+        getStudentRollno() int
+        getStudentPercentage() float64
+    }
+    ```
