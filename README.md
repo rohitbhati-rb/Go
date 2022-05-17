@@ -379,3 +379,15 @@ var pair map[string]int
     <variable name>.<field name>
     ```
 - Comparing structs: We can't compare 2 struct variables of different types even though they have same data fields. We can only compare 2 struct variables of same type.
+
+## Methods
+- It is a function that has a defined reciever.
+- It augments a function by adding an extra parameter section immediately after the `func` keyword that accepts a single argument, which is called a `reciever`.
+- Syntax:
+
+    ```golang
+    func (<reciever>) <method name>(<parameters>) <return type> {
+        // function body
+    }
+    ```
+- Method Sets: It is a set of methods that are available to a data type. It is an useful way to encapsulate functionality.
