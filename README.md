@@ -301,3 +301,4 @@ var pair map[string]int
         ```
     - Anonymous Function: It is a function without a name.
     - High Order Functions: It accepts a function as an argument or returns a function as its return type.
+    - `defer` statement delays the execution of a function untill the surrounding function returns. The deferred call's arguments are evaluated immediately, but the function call is not executed until the surrounding function returns.

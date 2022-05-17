@@ -42,11 +42,27 @@ func main() {
 	fmt.Printf("%T \n", val)
 	fmt.Println(val)
 	fmt.Println("")
+
+	// defer statement
+	printName("Rohit")
+	defer printCollege("BIT Mesra")
+	// The above statement will get executed after printBranch() is executed
+	printBranch("CSE")
+	// printBranch("ECE")
 }
 
 // A simple function
 func printMessage(s string) {
 	fmt.Println("This is", s)
+}
+func printName(s string) {
+	fmt.Println(s)
+}
+func printCollege(s string) {
+	fmt.Println(s)
+}
+func printBranch(s string) {
+	fmt.Println(s)
 }
 
 // Function returning multiple values
